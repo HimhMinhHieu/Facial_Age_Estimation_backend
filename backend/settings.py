@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-&62f&*8f=5uu)4+ndbdg6%0hcwvve4drxc!(b3mo@jaee156!g
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'facialageestimationbackend-production.up.railway.app']
+
+# CSRF_TRUSTED_ORIGINS = ['facialageestimationbackend-production.up.railway.app']
 
 
 # Application definition
@@ -76,9 +78,9 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 CORS_ALLOW_ALL_ORIGINS = True
 
 ALLOWED_HOSTS=[
-    '127.0.0.1',
+    'localhost', '127.0.0.1', 'facialageestimationbackend-production.up.railway.app'
     ]
-CSRF_TRUSTED_ORIGINS=['http://localhost:3000']  
+CSRF_TRUSTED_ORIGINS=['http://localhost:3000', 'facialageestimationbackend-production.up.railway.app', 'https://facial-age-estimation-frontend.onrender.com']
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
